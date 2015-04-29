@@ -9,5 +9,5 @@ angular.module('newCalorieCounter.controllers', [])
 
 .controller('foodsCtrl', function($scope, $stateParams) {
 
-$scope.foodsId = $scope.foodsId;
+$stateParams.foodsId = $scope.foodsId;
 });
