@@ -1,55 +1,17 @@
 
+<ion-view view-title="{{ category }}">
 
-<ion-view view-title="Foods">
   <ion-content>
-    <ion-list ng-if="foodId == 1">
-      <ion-item>back bacon</ion-item>
-      <ion-item>beef fillet</ion-item>
-      <ion-item>pork sausage</ion-item>
-      <ion-item>pork fillet</ion-item>
-      <ion-item>roast beef</ion-item>
-      <ion-item>roast lamb</ion-item>
-      <ion-item>sirlion steak</ion-item>
-      <ion-item>streaky bacon</ion-item>
-    </ion-list>
-    <ion-list ng-if="foodsId == 2">
-      <ion-item>asparagus</ion-item>
-      <ion-item>broccoli</ion-item>
-      <ion-item>onion</ion-item>
-      <ion-item>cabbage</ion-item>
-      <ion-item>carrot</ion-item>
-      <ion-item>courgette</ion-item>
-      <ion-item>green beans</ion-item>
-      <ion-item>partsnip</ion-item>
-      <ion-item>potato</ion-item>
-      <ion-item>red pepper</ion-item>
-      <ion-item>tomato</ion-item>
-    </ion-list>
-    <ion-list ng-if="foodsId == 3">
-      <ion-item>apple</ion-item>
-      <ion-item>banana</ion-item>
-      <ion-item>blueberries</ion-item>
-      <ion-item>kiwi</ion-item>
-      <ion-item>orange</ion-item>
-      <ion-item>peach</ion-item>
-      <ion-item>pear</ion-item>
-      <ion-item>pineapple</ion-item>
-      <ion-item>strawberry</ion-item>
-        </ion-list>
-      <ion-list ng-if="foodsId == 4">
-      <ion-item>muffins</ion-item>
-      <ion-item>crisps</ion-item>
-      <ion-item>lollipops</ion-item>
-      <ion-item>icecream</ion-item>
-      <ion-item>sweets</ion-item>
-      <ion-item>chocolate</ion-item>
-      <ion-item>toffee</ion-item>
-      <ion-item>popcorn</ion-item>
-        </ion-list>
+  <ion-list>
       
-      
+     <ion-item ng-repeat="food in foodlists">
+
+        {{ food }}
+
       </ion-item>
-    </ion-list>
+
+</ion-list>
+    
   </ion-content>
 </ion-view>
 
